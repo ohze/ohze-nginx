@@ -20,7 +20,9 @@ ENV VHOST_SYNC='' \
     REGISTRY_USER='' \
     REGISTRY_PW='' \
     VHOST_STATUS='' \
-    PROXY_STATUS=''
+    PROXY_STATUS='' \
+    VHOST_GHOST='' \
+    PROXY_GHOST=''
 
 ENTRYPOINT ["/entrypoint.sh"]
 CMD ["nginx", "-g", "daemon off;"]
