@@ -22,6 +22,7 @@ ENV VHOST_SYNC='' \
     VHOST_STATUS='' \
     PROXY_STATUS='' \
     VHOST_GHOST='' \
+    GHOST_IMAGES_DIR='' \
     PROXY_GHOST=''
 
 ENTRYPOINT ["/entrypoint.sh"]
