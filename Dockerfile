@@ -1,7 +1,7 @@
 # image sandinh/ohze-nginx
 FROM nginx:1.21.1-alpine
 
-ARG CONSUL_TEMPLATE_VERSION=0.20.0
+ARG CONSUL_TEMPLATE_VERSION=0.27.0
 
 RUN apk add --no-cache wget && \
     wget --no-check-certificate -qO /tmp/consul-template.tgz \
