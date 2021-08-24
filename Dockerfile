@@ -8,8 +8,8 @@ RUN \
         https://releases.hashicorp.com/consul-template/${CONSUL_TEMPLATE_VERSION}/consul-template_${CONSUL_TEMPLATE_VERSION}_linux_amd64.zip && \
     unzip /tmp/consul-template.zip -d /usr/bin/ && \
     rm /tmp/consul-template.zip && \
-    mkdir /etc/nginx/conf.d/certbot && \
-    wget -P /etc/nginx/conf.d/certbot \
+    mkdir /etc/nginx/certbot && \
+    wget -P /etc/nginx/certbot \
       https://raw.githubusercontent.com/certbot/certbot/master/certbot-nginx/certbot_nginx/_internal/tls_configs/options-ssl-nginx.conf
 
 COPY rootfs /
