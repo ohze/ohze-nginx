@@ -1,5 +1,5 @@
 # image sandinh/ohze-nginx
-FROM nginx:1.16.0-alpine
+FROM nginx:1.21.1-alpine
 
 ARG CONSUL_TEMPLATE_VERSION=0.20.0
 
